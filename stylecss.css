@@ -474,7 +474,7 @@ textarea {
     }
 
     .countdown-item {
-        min-width: 60px;
+        min-width: 40px;
     }
 
     .countdown-number {
@@ -531,4 +531,5 @@ textarea {
     .event-details {
         padding: 20px;
     }
+
 }
