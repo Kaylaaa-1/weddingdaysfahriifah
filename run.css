@@ -111,15 +111,15 @@ html {
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 5px;
-  margin: 30px 0;
+  gap: 3px;
+  margin: 20px 0;
 }
 
 .countdown-item {
   background: rgba(255, 255, 255, 0.15);
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  min-width: 70px;
+  min-width: 40px;
 }
 
 .countdown-number {
@@ -642,6 +642,7 @@ footer {
   .countdown-label { font-size: 0.9rem; } 
   .groom-bride img { width: 180px; } 
   .gift-card img { max-width: 80%; } }
+
 
 
 
