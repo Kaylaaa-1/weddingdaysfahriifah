@@ -635,10 +635,12 @@ footer {
 }
 
 @media (max-width: 480px) { 
+  .html { font-size : 50%;}
   .cover-content h2 { font-size: 2rem; } 
   .invitation-card h1 { font-size: 1.5rem; } 
   .countdown-number { font-size: 1.2rem; } 
   .countdown-label { font-size: 0.9rem; } 
   .groom-bride img { width: 120px; } 
   .gift-card img { max-width: 100%; } }
+
 
