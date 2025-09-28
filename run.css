@@ -1,0 +1,634 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/u.jpeg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: opacity();
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(img/ac.jpeg) no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.cover-content h2 {
+  font-family: 'Great Vibes' cursive;
+  font-size: 5rem;
+  margin: 0;
+  font-style: oblique;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b1055, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+}
+
+.cover-content h4 {
+  font-size: 2rem;
+}
+
+.cover-content p {
+  margin-bottom: 20px;
+}
+
+.cover-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #2b1055;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
+
+.home {
+  background: url(img/1.jpg);
+  background-size: cover;
+  min-height: 58vh;
+  margin-top: -6rem;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+  background-position: center;
+  z-index: -1;
+  filter: opacity();
+  text-align: center;
+}
+
+.home span {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b1055, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.invitation-card {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 0 auto;
+  transform: translateY(200px);
+}
+
+.invitation-card span {
+  font-size: 3rem;
+}
+
+.invitation-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 30px 0;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 70px;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.invitation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.music-btn img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.couple {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.text-couple {
+  margin: 2rem;
+}
+
+.text-couple h5 {
+  font-size: 1.5rem;
+}
+
+.text-couple p {
+  font-size: 0.9rem;
+}
+
+.image-list {
+  width: 100rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 100%;
+  width: fit-content;
+  display: flex;
+  gap: 0.05rem;
+  animation: loop 20s linear infinite;
+}
+
+.image {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+  justify-content: center;
+}
+
+.image img {
+  width: 95%;
+  height: 95%;
+}
+
+.groom-bride {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 0 auto;
+  transform: translateY(30px);
+}
+
+.groom-bride p {
+  font-size: 0.9rem;
+}
+
+.groom-bride img {
+  width: 55%;
+  height: 55%;
+}
+
+.groom-bride span {
+  font-size: 0.7rem;
+  color: #b6b6b6;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 60%;
+}
+
+.separator .line {
+  flex: 1;
+  border-top: 1px solid white;
+}
+
+.separator .icon {
+  margin: 0 15px;
+  font-size: 28px;
+}
+
+.line-text {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.line-text .text {
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.line-text .line {
+  border-top: 3px solid white;
+  width: 200px;
+}
+
+.akad {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 0 auto;
+  transform: translateY(30px);
+}
+
+.akad h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b1055, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.akad h2 {
+  font-size: 1.2rem;
+}
+
+
+.akad button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #2b1055;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
+
+.resepsi {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 20px auto;
+  transform: translateY(30px);
+}
+
+.resepsi h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b1055, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.resepsi h2 {
+  font-size: 1.2rem;
+}
+
+
+.resepsi button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #2b1055;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
+
+.gallery .line-text {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.gallery .line-text .text {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gallery .line-text .line {
+  margin-left: 20px;
+  border-top: 3px solid white;
+  width: 300px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*72deg)) translateZ(200px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.gift-section {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 20px auto;
+  transform: translateY(30px);
+}
+
+.gift-section p {
+  font-size: 0.9rem;
+}
+
+.gift-section button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #2b1055;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
+
+.gift-section button:hover {
+  transform: scale(1, 05);
+}
+
+.gift-card {
+  display: none;
+}
+
+.gift-card img {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.gift-card p {
+  font-size: 20px;
+}
+
+.gift-card span {
+  font-size: 30px;
+}
+
+.penutup {
+  padding-top: 400px;
+  padding-bottom: 20px;
+}
+
+.penutup p {
+  font-size: 0.9rem;
+}
+
+.penutup img {
+  width: 15%;
+  height: 15%;
+}
+
+.penutup h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b1055, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(500px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+/* Animasi Fade */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+.text-slide-left {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+.text-slide-right {
+  animation: slideInRight 2s ease-out forwards;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideLeft 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+  .cover-content h1 {
+    font-size: 1.5rem;
+  }
+}
