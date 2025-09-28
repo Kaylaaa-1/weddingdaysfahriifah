@@ -93,7 +93,7 @@ html {
   padding: 5px;
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  max-width: 450px;
+  max-width: 400px;
   margin: 0 auto;
   transform: translateY(200px);
 }
@@ -642,6 +642,7 @@ footer {
   .countdown-label { font-size: 0.9rem; } 
   .groom-bride img { width: 180px; } 
   .gift-card img { max-width: 80%; } }
+
 
 
 
