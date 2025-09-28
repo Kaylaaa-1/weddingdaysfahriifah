@@ -226,7 +226,7 @@ footer {
 }
 
 .groom-bride p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .groom-bride img {
@@ -424,7 +424,7 @@ footer {
 }
 
 .gift-section p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .gift-section button {
@@ -469,7 +469,7 @@ footer {
 }
 
 .penutup p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .penutup img {
@@ -642,6 +642,7 @@ footer {
   .countdown-label { font-size: 0.9rem; } 
   .groom-bride img { width: 180px; } 
   .gift-card img { max-width: 80%; } }
+
 
 
 
