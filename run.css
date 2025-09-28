@@ -631,4 +631,7 @@ footer {
   .cover-content h1 {
     font-size: 1.5rem;
   }
+
 }
+
+@media (max-width: 480px) { .cover-content h2 { font-size: 1.5rem; } .invitation-card h1 { font-size: 1.5rem; } .countdown-number { font-size: 1.2rem; } .countdown-label { font-size: 0.7rem; } .groom-bride img { width: 120px; } .gift-card img { max-width: 100px; } }
